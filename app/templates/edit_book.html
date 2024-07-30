@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <h1>Edit Book</h1>
+    <form action="" method="post">
+        <label>Title:</label><br>
+        <input type="text" name="title" value="{{ book[1] }}" required><br><br>
+        <label>Author:</label><br>
+        <input type="text" name="author" value="{{ book[2] }}" required><br><br>
+        <label>Genre:</label><br>
+        <input type="text" name="genre" value="{{ book[3] }}"><br><br>
+        <label>Price:</label><br>
+        <input type="text" name="price" value="{{ book[4] }}" required><br><br>
+        <input type="submit" value="Update Book">
+    </form>
+</body>
+</html>
